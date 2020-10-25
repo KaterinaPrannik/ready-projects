@@ -8,25 +8,84 @@ body {
   font-family: 'Quicksand', sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  
   text-align: center;
   height: 100vh;
   background-size: cover;
   color: #000000;
+  transition: background-image 1s ease-in-out;
+  width: 100vw;
+  background-position: center center;
 }
-
+.btn {
+    width: 60px;
+    height: 60px;
+    border: 0;
+    background: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    margin: 30px;
+  }
 .time {
   font-size: 8rem;
+  align-items: center;
+  justify-content: center;
+}
+.date{
+  margin-top:0.5rem ;
+  font-size: 6rem;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
   margin-bottom: 3rem;
+  align-items: center;
+  justify-content: center;
 }
 
 h2 {
   margin-bottom: 0.5rem;
   opacity: 0.8;
+  align-items: center;
+  justify-content: center;
+}
+.quote {
+  font: 1.2rem Georgia, serif;
+  background: black;
+  padding: 1em;
+  border-radius: 1em;
+  margin: 100px 0 0 50px;
+  justify-content: left;
+}
+.quote figcaption,
+.quote blockquote {
+  margin: 1em;
+}
+.quote figcaption {
+  text-align: right;
+}
+.btn {
+  width: 60px;
+  height: 60px;
+  border: 0;
+  border-radius: 50%;
+  background-image: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(.8);
+  margin: 10px;
+}
+.btn:hover {
+  filter: grayscale(.2);
+}
+.btn:active,
+.btn:focus {
+  outline: 0;
+}
+.btn:active{
+  transform: scale(1.02)
 }
 
 @media (max-width: 700px) {
